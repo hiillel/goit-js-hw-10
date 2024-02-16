@@ -1,25 +1,87 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+/* Стилі для кнопки "Start" */
+#start-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #start-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Стилі для таймера */
+  .timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .field {
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  .form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+  .form input[type="number"],
+  .form input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  .form fieldset {
+    margin-bottom: 15px;
+  }
+
+  .form fieldset legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form button:hover {
+    background-color: #0056b3;
+  }
